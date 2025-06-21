@@ -4,7 +4,7 @@ const Links = () => {
     return (
         <div className="social_links">
             <a
-                href="https://www.linkedin.com/in/arthi-a"
+                href="https://www.linkedin.com/in/arthianbalagan/"
                 target="_blank"
                 rel="noreferrer"
                 className="social_link linkedin"
@@ -29,7 +29,7 @@ const Links = () => {
 
 
             <a
-                href="https://github.com/arthianbalagan"
+                href="https://github.com/ArthiGit18"
                 target="_blank"
                 rel="noreferrer"
                 className="social_link github"
@@ -63,7 +63,7 @@ const Links = () => {
             </a>
 
             <a
-                href="https://edutech-blog.netlify.app"
+                href="https://app.netlify.com/teams/arthigit18/projects?creator=me&visibility=public"
                 target="_blank"
                 rel="noreferrer"
                 className="social_link netlify"
@@ -81,7 +81,7 @@ const Links = () => {
             </a>
 
             <a
-                href="https://www.instagram.com/yourusername"
+                href="https://www.instagram.com/its_a_rthi/"
                 target="_blank"
                 rel="noreferrer"
                 className="social_link instagram"
@@ -128,8 +128,10 @@ const Links = () => {
             </a>
 
             <a
-                href="mailto:yourmail@example.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=arthianbalagan180@gmail.com"
                 className="social_link gmail"
+                target="_blank"
+                rel="noreferrer"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -139,15 +141,15 @@ const Links = () => {
                 >
                     <title>Gmail</title>
                     <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
-             1.1.9 2 2 2h16c1.1 0 2-.9 
-             2-2V6c0-1.1-.9-2-2-2zm0 
-             4-8 5-8-5V6l8 5 8-5v2z" />
+         1.1.9 2 2 2h16c1.1 0 2-.9 
+         2-2V6c0-1.1-.9-2-2-2zm0 
+         4-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
                 Gmail
             </a>
 
             <a
-                href="https://wa.me/91xxxxxxxxxx"
+                href="https://wa.me/+96379424101"
                 target="_blank"
                 rel="noreferrer"
                 className="social_link whatsapp"

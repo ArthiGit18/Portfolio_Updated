@@ -4,7 +4,7 @@ import Links from './Links';
 
 const Contact = () => {
   return (
-    <section className="contact_section">
+    <section className="contact_section" id="contact">
       <div className="container">
         <h2>Get in Touch</h2>
 
@@ -12,8 +12,30 @@ const Contact = () => {
           {/* Contact Form */}
           <form
             className="contact_form"
-            action="https://formspree.io/f/yourFormID" // ← replace with your Formspree ID or EmailJS integration
-            method="POST"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const form = e.target;
+              const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value,
+              };
+
+              try {
+                const res = await fetch('http://localhost:5000/api/contact', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(formData),
+                });
+
+                const data = await res.json();
+                alert(data.message);
+                form.reset();
+              } catch (err) {
+                alert('Failed to send message.');
+                console.error(err);
+              }
+            }}
           >
             <input type="text" name="name" placeholder="Your Name" required />
             <input type="email" name="email" placeholder="Your Email" required />

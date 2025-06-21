@@ -53,7 +53,7 @@ const Projects = () => {
   const handleToggle = () => setShowAll(!showAll);
 
   return (
-    <section className="projects_bg">
+    <section className="projects_bg" id="projects">
       <div className="container">
         <div className="projects_wrapper">
           <h2>Projects</h2>

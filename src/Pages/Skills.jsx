@@ -57,7 +57,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div className='skills_bg'>
+    <div className='skills_bg' id="skills">
       <div className='container'>
         <div className='skills_wrapper'>
           <h2>Skills</h2>
